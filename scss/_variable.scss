@@ -1,0 +1,20 @@
+$color: #597193;
+@mixin row {
+    display: flex;
+    flex-flow: row;
+}
+
+@mixin column {
+    display: flex;
+    flex-flow: column;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin align {
+	display: flex;
+	align-items: center;
+}
