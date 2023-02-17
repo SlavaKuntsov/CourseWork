@@ -1,0 +1,377 @@
+.availability {
+    @include column;
+    // gap: 46px;
+    //heading
+    .availability-form {
+        @include row;
+        @extend %max;
+        margin: 0 auto;
+        .image {
+            width: 637px;
+            height: 523px;
+            background: #b1bed0;
+            box-shadow: 0px 4px 79px 7px rgba(115, 115, 115, 0.12);
+            border-radius: 8px 0px 0px 8px;
+            position: relative;
+            img {
+                position: absolute;
+                bottom: 0;
+            }
+        }
+        .check-form {
+            position: relative;
+            background: $salat;
+            border-radius: 0px 8px 8px 0px;
+            padding: 76px 66px 0 66px;
+            @include column;
+            gap: 30px;
+            .transparent-arrow {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            .input {
+                @include column;
+                gap: 10px;
+                label {
+                    font-weight: 400;
+                    font-size: 14px;
+                    letter-spacing: 0.03em;
+                    color: #222426;
+                }
+                input {
+                    width: 340px;
+                    border: 1px solid #ababab;
+                    border-radius: 2px;
+                    background: $salat;
+                    padding: 0 14px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 55px;
+                    letter-spacing: 0.03em;
+                    color: #636461ca;
+					@include sh-hover;
+                }
+                select {
+                    border: 1px solid #ababab;
+                    border-radius: 2px;
+                    appearance: none;
+                    background: $salat url("/img/main/select-arrow.svg");
+                    background-repeat: no-repeat;
+                    background-position: right 14px center;
+                    padding: 0px 22px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 55px;
+                    letter-spacing: 0.03em;
+                    color: #a4a4a4;
+					@include sh-hover;
+                }
+            }
+            button {
+				@include sh-act-hover($salat);
+                background: $salat;
+                border: 1.5px solid #596b86;
+                border-radius: 2px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 55px;
+                text-align: center;
+                letter-spacing: 0.02em;
+                color: #222426;
+            }
+        }
+    }
+}
+
+.rooms {
+    .all-rooms-carts {
+        @include row;
+        @include center;
+        gap: 30px;
+        .room-cart {
+			@include hover;
+            img {
+                width: 350px;
+                height: 264px;
+            }
+            .cart-text {
+                border: 1px solid #596b86;
+                padding: 24px 0 10px 22px;
+                h4 {
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 55px;
+                    color: #131313;
+                }
+                .small-carts {
+                    @include align;
+                    gap: 17px;
+                    .small {
+                        @include align;
+                        gap: 5px;
+                        img {
+                            width: 12px;
+                            height: 12px;
+                        }
+                        p {
+                            font-weight: 300;
+                            font-size: 12px;
+                            // line-height: 28px;
+                            letter-spacing: 0.02em;
+                            color: #727272;
+                        }
+                    }
+                }
+                h3 {
+                    span {
+                        font-weight: 600;
+                        font-size: 30px;
+                        line-height: 55px;
+                        color: #384d6c;
+                    }
+                    font-weight: 300;
+                    font-size: 17px;
+                    line-height: 55px;
+                    color: #5f5f5f;
+                }
+            }
+        }
+    }
+}
+
+.facilities {
+    h5 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.26em;
+        color: #597193;
+        padding: 0 0 20px 0;
+    }
+    .all-facilities-carts {
+        @include center;
+        @extend %max;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: wrap;
+        gap: 30px;
+        .facilities-cart {
+			@include hover;
+            padding: 20px 30px;
+            width: 350px;
+            border: 1px solid #596b86;
+            border-radius: 2px;
+            @include column;
+            gap: 16px;
+            .facilities-cart-heading {
+                @include align;
+                justify-content: space-between;
+                h4 {
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 55px;
+                    color: #131313;
+                }
+            }
+            p {
+                width: 290px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #9b9b9b;
+            }
+        }
+    }
+}
+
+.pluses {
+    @extend %max;
+    margin: 0 auto;
+    .all-plusses-carts {
+        @include align;
+        @include center;
+        // flex-flow: wrap;
+        gap: 70px;
+        .pluses-cart {
+            @include column;
+            align-items: flex-start;
+            gap: 10px;
+            h3 {
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 55px;
+                text-align: center;
+                color: #596b86;
+            }
+            p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #939393;
+                white-space: nowrap;
+            }
+        }
+        hr {
+            transform: rotate(90deg);
+            height: 1.5px;
+            width: 54px;
+            background: #c4c4c4;
+        }
+    }
+}
+
+.history {
+    @extend %max;
+    // margin: 0 auto;
+    @include row;
+    margin: 120px auto 0;
+    height: 523px;
+    .history-text {
+        padding: 85px 65px;
+        background: $salat;
+        h2 {
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 55px;
+            color: #353637;
+            padding: 0 0 12px 0;
+        }
+        .text {
+            padding: 0 0 35px 0;
+            @include column;
+            gap: 30px;
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: 0.02em;
+                color: #686868;
+            }
+        }
+    }
+}
+
+.customers {
+    @extend %max;
+    margin: 0 auto;
+    @include column;
+    gap: 47px;
+    .customers-text {
+        justify-content: flex-start;
+        h2 {
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 50px;
+            color: #353637;
+        }
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: 0.045em;
+            color: #959595;
+        }
+    }
+}
+
+.news {
+    @extend %max;
+    margin: 0 auto;
+    @include column;
+    gap: 47px;
+    .news-text {
+        h5 {
+			font-family: 'Average Sans', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.26em;
+            color: #7587a0;
+        }
+        h2 {
+            font-weight: 400;
+            font-size: 45px;
+            line-height: 55px;
+            align-items: center;
+            color: #353637;
+        }
+    }
+}
+
+.signUp {
+    @extend %max;
+    margin: 0 auto;
+    .signUp-block {
+        position: relative;
+        padding: 73px 0;
+        background: #b1bed0;
+        border-radius: 10px;
+        display: flex;
+        @include column;
+        @include align;
+        gap: 30px;
+        .form {
+			@include sh-hover;
+            width: 445px;
+            height: 45px;
+            background: #ffffff;
+            @include align;
+            justify-content: space-between;
+			form{
+				@include align;
+			}
+            input[type="email"] {
+                padding: 0 20px;
+                font-weight: 400;
+                font-size: 14px;
+				width: 340px;
+				color: #a2a2a2;
+            }
+            input[type="submit"] {
+                background: #889cb9;
+                box-shadow: -3px 2px 12px rgba(0, 0, 0, 0.15);
+                border-radius: 6px;
+                padding: 13px 15px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 27px;
+                text-align: center;
+                letter-spacing: 0.02em;
+                color: #ffffff;
+				@include sh-act-hover(#889cb9)
+            }
+        }
+        .right {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .left {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        h5 {
+			font-family: 'Average Sans', sans-serif;
+            width: 383px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.155em;
+            color: #ffffff;
+        }
+        h2 {
+            width: 533px;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 50px;
+            text-align: center;
+            color: #334052;
+        }
+    }
+}

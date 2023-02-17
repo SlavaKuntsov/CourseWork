@@ -1,82 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Hotel</title>
-	
-	<link rel="icon" href="/img/header/hotel.svg">
-	<link rel="stylesheet" href="css/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hotel</title>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
-	<header>
-		<div class="wrapper">
-			<nav>
-				<div class="logo">
-					<img src="./img/header/hotel.svg" alt="">
-					<h3>Hotel</h3>
-				</div>
-				<div class="links">
-					<ul>
-						<li>Home</li>
-						<li>Branch</li>
-						<li>Search</li>
-						<li>About Us</li>
-						<li>Pages</li>
-						<li>BLog</li>
-					</ul>
-					<a class="blue-btn" href="#">Reservation</a>
-				</div>
-			</nav>
-			<div class="header-main">
-				<div class="main-text">
-					<div class="text">
-						<h1>Discover a hotel that defies a new dimension of luxury.</h1>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-					</div>
-					<div class="buttons">
-						<a href="#" class="blue-btn">Get Started</a>
-						<div class="video">
-							<!-- TODO: fix href -->
-							<a class="circle-button" href="#"><svg width="64" height="64" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<g filter="url(#filter0_d_20_162)">
-								<path d="M32 8C21 8 12 17 12 28C12 39 21 48 32 48C43 48 52 39 52 28C52 17 43 8 32 8ZM39.8333 29.6667L28.6667 35.6667C27.3333 36.3333 25.8333 35.5 25.8333 34V22C25.8333 20.5 27.5 19.5 28.6667 20.3333L39.8333 26.3333C41.3333 27 41.3333 29 39.8333 29.6667Z" fill="#597193"/>
-								</g>
-								<defs>
-								<filter id="filter0_d_20_162" x="0" y="0" width="64" height="64" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-								<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-								<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-								<feOffset dy="4"/>
-								<feGaussianBlur stdDeviation="6"/>
-								<feComposite in2="hardAlpha" operator="out"/>
-								<feColorMatrix type="matrix" values="0 0 0 0 0.0833333 0 0 0 0 0.0833333 0 0 0 0 0.0833333 0 0 0 0.15 0"/>
-								<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_20_162"/>
-								<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_20_162" result="shape"/>
-								</filter>
-								</defs>
-								</svg>
+        <link rel="icon" href="/img/header/hotel.svg">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Average+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+	</head>
+    <body>
+        <header>
+            <div class="wrapper">                  
+                <nav>
+					<div class="nav-wrapper">
+						<div class="logo">
+							<a href="#">
+								<svg width="30" height="46" viewBox="0 0 30 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20 12L30 19.878V46H20V12Z" fill="#353637"/>
+									<path d="M10 18L20 24.125V46H10V18Z" fill="#597193"/>
+									<path d="M0 0L10 7.66667V46H0V0Z" fill="#AAC7F0"/>
+								</svg>	
 							</a>
-							<a class="watch-text" href="#">Watch video</a>
+							<a href="#">
+								<h3>Hotel</h3>
+							</a>
+							
 						</div>
+						<div class="links">
+							<ul>
+								<li>Home</li>
+								<li>Branch</li>
+								<li>Search</li>
+								<li>About Us</li>
+								<li>Pages</li>
+								<li>BLog</li>
+							</ul>
+							<a class="blue-btn" href="#">Reservation</a>
+						</div>
+
 					</div>
+                </nav>
+                <div class="header-main">
+                    <div class="main-text">
+                        <div class="text">
+                            <h1>Discover a hotel that defies a new dimension of luxury.</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" class="blue-btn">Get Started</a>
+                            <div class="video">
+                                <!-- TODO: fix href -->
+                                <a class="circle-button" href="#">
+                                    <svg width="64" height="64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_d_20_162)">
+                                            <path d="M32 8C21 8 12 17 12 28C12 39 21 48 32 48C43 48 52 39 52 28C52 17 43 8 32 8ZM39.8333 29.6667L28.6667 35.6667C27.3333 36.3333 25.8333 35.5 25.8333 34V22C25.8333 20.5 27.5 19.5 28.6667 20.3333L39.8333 26.3333C41.3333 27 41.3333 29 39.8333 29.6667Z" fill="#597193"/>
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_d_20_162" x="0" y="0" width="64" height="64" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                                <feOffset dy="4"/>
+                                                <feGaussianBlur stddeviation="6"/>
+                                                <feComposite in2="hardAlpha" operator="out"/>
+                                                <feColorMatrix type="matrix" values="0 0 0 0 0.0833333 0 0 0 0 0.0833333 0 0 0 0 0.0833333 0 0 0 0.15 0"/>
+                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_20_162"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_20_162" result="shape"/>
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <a class="watch-text" href="#">Watch video</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-image">
+                        <img src="/img/header/bilding.svg" alt="">
+                        <div class="big-circle"></div>
+                    </div>
+                </div>
+				<div class="circle-very-small"></div>
+				<div class="circle-small"></div>
+				<div class="circle-medium"></div>
+				<div class="circle-big"></div>
+				<div class="graphic">
+
 				</div>
-				<div class="main-image">
-					<img src="/img/header/bilding.svg" alt="">
-					<div class="big-circle"></div>
+				<div class="payment">
+					<div class="circle">
+						<img src="img/header/payment.svg" alt="">
+					</div>
+					<h5>Payment</h5>
+					<p>on internet</p>
+				</div>
+            </div>
+        </header>
+
+        <main>
+            <div class="availability blocksPadding">
+                <div class="heading">
+                    <h2>Check Availability</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+                </div>
+
+                <div class="availability-form">
+                    <div class="image">
+                        <img src="img/main/transparent-building.svg" alt="">
+                    </div>
+                    <form class="check-form">
+                        <div class="input">
+                            <label for="date">CHECK-IN</label>
+                            <input id="date" type="date">
+                        </div>
+                        <div class="input">
+                            <label for="date">CHECK-OUT</label>
+                            <input id="date" type="date">
+                        </div>
+                        <div class="input">
+                            <label for="date">GUESTS</label>
+                            <select name="" id="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                        <button>CHECK AVAILABILITY</button>
+						<img class="transparent-arrow" src="img/main/small-arrows.svg" alt="">
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="rooms blocksPadding">
+                <div class="heading">
+                    <h2>Our Most Popular Room</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+                </div>
+
+                <div class="all-rooms-carts"> 
+                    <div class="room-cart">
+                        <img src="/img/main/room1.svg" alt="">
+                        <div class="cart-text">
+                            <h4>Deluxe Contrast Room</h4>
+                            <div class="small-carts">
+                                <div class="small">
+                                    <img src="/img/main/small.svg" alt="">
+                                    <p>52 sqm</p>
+                                </div>
+                                <div class="small">
+                                    <img src="/img/main/small2.svg" alt="">
+                                    <p>2 Bed</p>
+                                </div>
+                                <div class="small">
+                                    <img src="/img/main/small3.svg" alt="">
+                                    <p>1 Bathroom</p>
+                                </div>
+                            </div>
+							<h3><span>$200</span> / Night</h3>
+                        </div>
+                    </div>
+                    <div class="room-cart">
+                        <img src="/img/main/room1.svg" alt="">
+                        <div class="cart-text">
+                            <h4>Luxury Twin Room</h4>
+                            <div class="small-carts">
+                                <div class="small">
+                                    <img src="/img/main/small.svg" alt="">
+                                    <p>52 sqm</p>
+                                </div>
+                                <div class="small">
+                                    <img src="/img/main/small2.svg" alt="">
+                                    <p>2 Bed</p>
+                                </div>
+                                <div class="small">
+                                    <img src="/img/main/small3.svg" alt="">
+                                    <p>1 Bathroom</p>
+                                </div>
+                            </div>
+							<h3><span>$250</span> / Night</h3>
+                        </div>
+                    </div>
+                    <div class="room-cart">
+                        <img src="/img/main/room1.svg" alt="">
+                        <div class="cart-text">
+                            <h4>Single Contrast Room</h4>
+                            <div class="small-carts">
+                                <div class="small">
+                                    <img src="/img/main/small.svg" alt="">
+                                    <p>52 sqm</p>
+                                </div>
+                                <div class="small">
+                                    <img src="/img/main/small2.svg" alt="">
+                                    <p>2 Bed</p>
+                                </div>
+                                <div class="small">
+                                    <img src="/img/main/small3.svg" alt="">
+                                    <p>1 Bathroom</p>
+                                </div>
+                            </div>
+							<h3><span>$280</span> / Night</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			<div class="facilities blocksPadding">
+				<div class="heading">
+					<h5>OUR SERVICES</h5>
+                    <h2>Hotel Facilities</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+                </div>
+
+				<div class="all-facilities-carts">
+					<div class="facilities-cart">
+						<div class="facilities-cart-heading">
+							<h4>Pick up & Drop</h4>
+							<img src="/img/main/facilities1.svg" alt="">
+						</div>
+						<p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+					</div>
+					<div class="facilities-cart">
+						<div class="facilities-cart-heading">
+							<h4>Parking Space</h4>
+							<img src="/img/main/facilities2.svg" alt="">
+						</div>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+					<div class="facilities-cart">
+						<div class="facilities-cart-heading">
+							<h4>Room Services</h4>
+							<img src="/img/main/facilities3.svg" alt="">
+						</div>
+						<p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+					</div>
+					<div class="facilities-cart">
+						<div class="facilities-cart-heading">
+							<h4>Swimming Pool</h4>
+							<img src="/img/main/facilities4.svg" alt="">
+						</div>
+						<p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+					</div>
+					<div class="facilities-cart">
+						<div class="facilities-cart-heading">
+							<h4>Fibre Internet</h4>
+							<img src="/img/main/facilities5.svg" alt="">
+						</div>
+						<p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+					</div>
+					<div class="facilities-cart">
+						<div class="facilities-cart-heading">
+							<h4>Breakfast</h4>
+							<img src="/img/main/facilities6.svg" alt="">
+						</div>
+						<p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+					</div>
 				</div>
 			</div>
-		</div>
-	</header>
 
-	<main>
-		Check Availability
-	</main>
+			<div class="pluses blocksPadding">
+				<div class="all-plusses-carts">
+					<div class="pluses-cart">
+						<h3>302+</h3>
+						<p>Room & Suites</p>
+					</div>
+					<hr>
+					<div class="pluses-cart">
+						<h3>25</h3>
+						<p>Restaurant</p>
+					</div>
+					<hr>
+					<div class="pluses-cart">
+						<h3>510+</h3>
+						<p>Exceptional Food</p>
+					</div>
+					<hr>
+					<div class="pluses-cart">
+						<h3>65</h3>
+						<p>Destination</p>
+					</div>
+				</div>
+			</div>
 
-	<script type="text/javascript" src="script.js"></script>	
-</body>
+			<div class="history">
+				<div class="history-text"">
+					<h2>Discover Our History</h3>
+					<div class="text">
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+					</div>
+					<div class="buttons">
+                        <a href="#" class="blue-btn">Get Started</a>
+                        <div class="video">
+                            <!-- TODO: fix href -->
+                            <a class="circle-button" href="#">
+                                <svg width="64" height="64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d_20_162)">
+                                        <path d="M32 8C21 8 12 17 12 28C12 39 21 48 32 48C43 48 52 39 52 28C52 17 43 8 32 8ZM39.8333 29.6667L28.6667 35.6667C27.3333 36.3333 25.8333 35.5 25.8333 34V22C25.8333 20.5 27.5 19.5 28.6667 20.3333L39.8333 26.3333C41.3333 27 41.3333 29 39.8333 29.6667Z" fill="#597193"/>
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_d_20_162" x="0" y="0" width="64" height="64" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                            <feOffset dy="4"/>
+                                            <feGaussianBlur stddeviation="6"/>
+                                            <feComposite in2="hardAlpha" operator="out"/>
+                                            <feColorMatrix type="matrix" values="0 0 0 0 0.0833333 0 0 0 0 0.0833333 0 0 0 0 0.0833333 0 0 0 0.15 0"/>
+                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_20_162"/>
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_20_162" result="shape"/>
+                                        </filter>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a class="watch-text" href="#">Watch video</a>
+                        </div>
+                    </div>
+				</div>
+                <div class="image">
+                    <img src="img/main/history.svg" alt="">
+                </div>
+            </div>
+
+			<div class="customers blocksPadding">
+				<div class="customers-text">
+					<h2>Our Happy Customers</h2>
+					<p>Know about our clients, we are a woldwide corporate brand</p>
+				</div>
+				слайдер
+				<!-- <div class="all-customers-carts">
+					<div class="customers-cart">
+						<img src="" alt="">
+						<h4></h4>
+						<span></span>
+						<p></p>
+					</div>
+				</div> -->
+			</div>
+			
+			<div class="news blocksPadding">
+				<div class="news-text">
+					<h5>HOTEL BLOG</h5>
+					<h2>Our News</h2>
+				</div>
+				слайдер
+			</div>
+
+			<div class="signUp blocksPadding">
+				<div class="signUp-block">
+					<!-- <img class="right" src="img/main/small-arrows.svg" alt="">
+					<img class="left" src="img/main/small-arrows.svg" alt=""> -->
+					<svg class="left" width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M48.5664 74.0449L24.6113 98V74.0449H0L24.6113 49.4336H48.5664V74.0449Z" fill="#D2DCE9"/>
+						<path d="M49.4336 25.0508L25.0508 49.4336V25.0508H0L25.0508 0H49.4336V25.0508Z" fill="#D2DCE9"/>
+						<path d="M98 74.0449L74.0449 98V74.0449H49.4336L74.0449 49.4336H98V74.0449Z" fill="#D2DCE9"/>
+						<path d="M98 25.0508L74.0449 49.4336V25.0508H49.4336L74.0449 0H98V25.0508Z" fill="#D2DCE9"/>
+					</svg>
+					<svg class="right" width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_24497_10)">
+						<path d="M48.5664 74.0449L24.6113 98V74.0449H0L24.6113 49.4336H48.5664V74.0449Z" fill="#D2DCE9"/>
+						<path d="M49.4336 25.0508L25.0508 49.4336V25.0508H0L25.0508 0H49.4336V25.0508Z" fill="#D2DCE9"/>
+						<path d="M98 74.0449L74.0449 98V74.0449H49.4336L74.0449 49.4336H98V74.0449Z" fill="#D2DCE9"/>
+						<path d="M74.0449 49.4336L98 25.0508V10.5V10C98 4 93 0 88 0H86.0224H74.0449L49.4336 25.0508H74.0449V49.4336Z" fill="#D2DCE9"/>
+						</g>
+						<defs>
+						<clipPath id="clip0_24497_10">
+						<rect width="98" height="98" fill="white"/>
+						</clipPath>
+						</defs>
+					</svg>
+					<h5>Stay in Touch</h5>
+					<h2>Signup to receive news and updates from our hotel.</h2>
+					<div class="form">
+						<form action="">
+							<input required type="email" placeholder="Enter Your Email Address">
+							<input type="submit" value="subscribe">
+						</form>
+					</div>
+				</div>
+			</div>
+        </main>
+
+		<footer>
+			<div class="contactUs">
+				<div class="contact-hotel">
+					<div class="hotel">
+						<svg width="30" height="46" viewBox="0 0 30 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20 12L30 19.878V46H20V12Z" fill="#353637"/>
+							<path d="M10 18L20 24.125V46H10V18Z" fill="#597193"/>
+							<path d="M0 0L10 7.66667V46H0V0Z" fill="#AAC7F0"/>
+						</svg>
+						<h6>HOTEL</h6>
+					</div>
+					<p>Itawa is a responsive real estate landing page template.Itawa is a  landing page template.Itawa template.</p>
+				</div>
+				<div class="contact-contactUs">
+					<h6>Contact Us</h6>
+					<div class="line">
+						<img src="img/footer/map.svg" alt="">
+						<p>123 Business Centre London SW1A 1AA</p>
+					</div>
+					<div class="line">
+						<img src="img/footer/phone.svg" alt="">
+						<p>+1 0000 000 00</p>
+					</div>
+					<div class="line">
+						<img src="img/footer/mail.svg" alt="">
+						<p>info@businessname.com</p>
+					</div>
+				</div>
+				<div class="contact-followUs">
+					<h6>Follow Us</h6>
+					<div class="icons">
+						<a href="#" class="border">
+							<img src="img/footer/facebook.svg" alt="">
+						</a>
+						<a href="https://www.instagram.com/slava_kunz_/" class="border">
+							<img src="img/footer/intagram.svg" alt="">
+						</a>
+						<a href="#" class="border">
+							<img src="img/footer/twitter.svg" alt="">
+						</a>
+					</div>
+					<p>Itawa is a responsive real estate landing page template.Itawa is a  landing page template.Itawa template.</p>
+				</div>
+			</div>
+
+			<div class="last">
+				<h6>©HOTEL Official 2022</h6>
+				<ul>
+					<li><a href="#">Privacy policy</a></li>
+					<li><a href="#">Cookies</a></li>
+					<li><a href="#">Terms of service</a></li>
+				</ul>
+			</div>
+		</footer>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
 </html>

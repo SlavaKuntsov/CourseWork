@@ -1,0 +1,120 @@
+footer {
+    .contactUs {
+        border: 1px solid #7587a0;
+        max-width: 1198px;
+        margin: 86px auto 77px;
+        padding: 15px 45px 45px;
+        @include align;
+        gap: 100px;
+        .contact-hotel {
+            @include column;
+            .hotel {
+                @include row;
+                align-items: flex-end;
+                padding: 0 0 20px 0;
+                gap: 10px;
+                h6 {
+                    font-weight: 600;
+                    font-size: 26px;
+                    line-height: 17px;
+                    color: #597193;
+                }
+            }
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #a9a9a9;
+            }
+        }
+        .contact-contactUs {
+            @include column;
+            align-items: flex-start;
+            h6 {
+                padding: 50px 0 20px 0;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 26px;
+                text-align: center;
+                color: #131313;
+            }
+            .line {
+                @include align;
+                gap: 13px;
+                p {
+                    width: 269px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 30px;
+                    letter-spacing: 0.02em;
+                    color: #a9a9a9;
+                }
+            }
+        }
+        .contact-followUs {
+            @include column;
+            align-items: flex-start;
+            h6 {
+                padding: 50px 0 20px 0;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 26px;
+                text-align: center;
+                color: #131313;
+            }
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #a9a9a9;
+            }
+            .icons {
+                @include align;
+                gap: 15px;
+                padding: 0 0 5px 0;
+                a {
+                    border: 1px solid #d9d9d9;
+                    border-radius: 4px;
+                    width: 31px;
+                    height: 31px;
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        width: 17px;
+                    }
+                }
+            }
+        }
+    }
+    .last {
+        height: 60px;
+		padding: 0 165px;
+        background: #b1bed0;
+        @include align;
+		justify-content: space-between;
+        h6 {
+            font-family: "Work Sans";
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            color: rgba(0, 0, 0, 0.42);
+        }
+        ul {
+			@include align;
+			gap: 20px;
+            li {
+				a{
+					font-family: "Work Sans";
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 24px;
+					text-align: right;
+					letter-spacing: 0.02em;
+					color: rgba(0, 0, 0, 0.42);
+				}
+            }
+        }
+    }
+}
