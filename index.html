@@ -35,12 +35,12 @@
 						</div>
 						<div class="links">
 							<ul>
-								<li>Home</li>
-								<li>Branch</li>
-								<li>Search</li>
-								<li>About Us</li>
-								<li>Pages</li>
-								<li>BLog</li>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#">Branch</a></li>
+								<li><a href="#">Search</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Pages</a></li>
+								<li><a href="#">Blog</a></li>
 							</ul>
 							<a class="blue-btn" href="#">Reservation</a>
 						</div>
@@ -125,9 +125,9 @@
                         <div class="input">
                             <label for="date">GUESTS</label>
                             <select name="" id="">
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
                             </select>
                         </div>
                         <button>CHECK AVAILABILITY</button>
@@ -143,70 +143,23 @@
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
                 </div>
 
-                <div class="all-rooms-carts"> 
-                    <div class="room-cart">
-                        <img src="/img/main/room1.svg" alt="">
-                        <div class="cart-text">
-                            <h4>Deluxe Contrast Room</h4>
-                            <div class="small-carts">
-                                <div class="small">
-                                    <img src="/img/main/small.svg" alt="">
-                                    <p>52 sqm</p>
-                                </div>
-                                <div class="small">
-                                    <img src="/img/main/small2.svg" alt="">
-                                    <p>2 Bed</p>
-                                </div>
-                                <div class="small">
-                                    <img src="/img/main/small3.svg" alt="">
-                                    <p>1 Bathroom</p>
-                                </div>
-                            </div>
-							<h3><span>$200</span> / Night</h3>
-                        </div>
-                    </div>
-                    <div class="room-cart">
-                        <img src="/img/main/room1.svg" alt="">
-                        <div class="cart-text">
-                            <h4>Luxury Twin Room</h4>
-                            <div class="small-carts">
-                                <div class="small">
-                                    <img src="/img/main/small.svg" alt="">
-                                    <p>52 sqm</p>
-                                </div>
-                                <div class="small">
-                                    <img src="/img/main/small2.svg" alt="">
-                                    <p>2 Bed</p>
-                                </div>
-                                <div class="small">
-                                    <img src="/img/main/small3.svg" alt="">
-                                    <p>1 Bathroom</p>
-                                </div>
-                            </div>
-							<h3><span>$250</span> / Night</h3>
-                        </div>
-                    </div>
-                    <div class="room-cart">
-                        <img src="/img/main/room1.svg" alt="">
-                        <div class="cart-text">
-                            <h4>Single Contrast Room</h4>
-                            <div class="small-carts">
-                                <div class="small">
-                                    <img src="/img/main/small.svg" alt="">
-                                    <p>52 sqm</p>
-                                </div>
-                                <div class="small">
-                                    <img src="/img/main/small2.svg" alt="">
-                                    <p>2 Bed</p>
-                                </div>
-                                <div class="small">
-                                    <img src="/img/main/small3.svg" alt="">
-                                    <p>1 Bathroom</p>
-                                </div>
-                            </div>
-							<h3><span>$280</span> / Night</h3>
-                        </div>
-                    </div>
+                <div id="roomsCarts" class="all-rooms-carts"> 
+					<div class="leftButton">
+						<svg width="18" height="35" viewBox="0 0 18 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M16.7553 0.985718L0.259405 17.6709C-0.0671244 18.0013 -0.0677226 18.5277 0.259405 18.8569L16.194 34.9857L17.4228 33.7997L2.07568 18.2651L17.9857 2.17265L16.7553 0.985718Z" fill="white"/>
+							</svg>
+							
+							
+							
+						
+					</div>
+					<!-- carts -->
+					<div class="rightButton">
+						<svg width="18" height="35" viewBox="0 0 18 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1.24465 34.9857L17.7406 18.3006C18.0671 17.9702 18.0677 17.4438 17.7406 17.1145L1.80602 0.985717L0.577194 2.17176L15.9243 17.7064L0.0142902 33.7988L1.24465 34.9857Z" fill="white"/>
+							</svg>
+							
+					</div>
                 </div>
             </div>
 
@@ -289,6 +242,7 @@
 
 			<div class="history">
 				<div class="history-text"">
+					<img class="transparent-arrow" src="img/main/small-arrows.svg" alt="">
 					<h2>Discover Our History</h3>
 					<div class="text">
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>

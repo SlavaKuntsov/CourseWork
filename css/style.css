@@ -1,4 +1,4 @@
-header .wrapper, .signUp, .news, .customers, .history, .pluses, .facilities .all-facilities-carts, .availability .availability-form {
+header .wrapper, .signUp, .news, .customers, .history, .pluses, .facilities .all-facilities-carts, .rooms .all-rooms-carts, .availability .availability-form {
   max-width: 1110px;
 }
 
@@ -187,11 +187,31 @@ img {
 .rooms .all-rooms-carts {
   display: flex;
   flex-flow: row;
+  margin: 0 auto;
+  gap: 30px;
+  position: relative;
+}
+.rooms .all-rooms-carts .leftButton, .rooms .all-rooms-carts .rightButton {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  z-index: 20;
+  border-radius: 50%;
+  background: rgb(162, 186, 229);
+  top: 40%;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  display: flex;
+  align-items: center;
+}
+.rooms .all-rooms-carts .leftButton {
+  left: -40px;
+}
+.rooms .all-rooms-carts .rightButton {
+  right: -40px;
 }
 .rooms .all-rooms-carts .room-cart {
+  z-index: 10;
   transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 .rooms .all-rooms-carts .room-cart:hover {
@@ -204,7 +224,7 @@ img {
 }
 .rooms .all-rooms-carts .room-cart .cart-text {
   border: 1px solid #596b86;
-  padding: 24px 0 10px 22px;
+  padding: 16px 0 10px 22px;
 }
 .rooms .all-rooms-carts .room-cart .cart-text h4 {
   font-weight: 400;
@@ -341,8 +361,14 @@ img {
   height: 523px;
 }
 .history .history-text {
+  position: relative;
   padding: 85px 65px;
   background: rgba(237, 255, 249, 0.6352941176);
+}
+.history .history-text .transparent-arrow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .history .history-text h2 {
   font-weight: 400;
@@ -509,10 +535,6 @@ header .wrapper {
   flex-flow: column;
   justify-content: space-between;
 }
-header .wrapper nav {
-  position: fixed;
-  width: 80%;
-}
 header .wrapper nav .nav-wrapper {
   display: flex;
   align-items: center;
@@ -546,21 +568,28 @@ header .wrapper nav .nav-wrapper .links ul {
   align-items: center;
   gap: 20px;
 }
-header .wrapper nav .nav-wrapper .links ul li {
+header .wrapper nav .nav-wrapper .links ul li a {
+  cursor: pointer;
   font-family: "Average Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0.02em;
-  color: #597193;
+  color: #353637;
   line-height: 29px;
 }
-header .wrapper nav .nav-wrapper .links ul li:not(:nth-child(1)):hover {
+header .wrapper nav .nav-wrapper .links ul li {
+  transition: border-bottom 1s ease-in-out;
+}
+header .wrapper nav .nav-wrapper .links ul li:not(:nth-child(1)):hover a {
+  padding: 0 0 3px 0;
   border-bottom: 1px solid black;
   margin-bottom: -1px;
 }
-header .wrapper nav .nav-wrapper .links ul li:nth-child(1) {
-  border-bottom: 1.5px solid #597193;
+header .wrapper nav .nav-wrapper .links ul li:nth-child(1) a {
+  padding: 0 0 1px 0;
+  border-bottom: 2px solid #597193;
+  color: #597193;
 }
 header .wrapper .header-main {
   flex: 1;

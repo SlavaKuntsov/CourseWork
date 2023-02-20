@@ -9,8 +9,6 @@ header {
         @include column;
         justify-content: space-between;
         nav {
-			position: fixed;
-			width: 80%;
 			.nav-wrapper{
 				@include align;
 				display: flex;
@@ -38,21 +36,28 @@ header {
 					ul {
 						@include align;
 						gap: 20px;
-						li {
+						li a{ 
+							cursor: pointer;
 							font-family: "Average Sans", sans-serif;
 							font-weight: 400;
 							font-size: 18px;
 							line-height: 26px;
 							letter-spacing: 0.02em;
-							color: #597193;
+							color: #353637;
 							line-height: 29px;
-							&:not(:nth-child(1)):hover {
+						}
+						li{
+							transition: border-bottom 1s ease-in-out;
+							&:not(:nth-child(1)):hover a{
+								padding: 0 0 3px 0;
 								border-bottom: 1px solid black;
 								margin-bottom: -1px;
 							}
 						}
-						li:nth-child(1) {
-							border-bottom: 1.5px solid #597193;
+						li:nth-child(1) a{
+							padding: 0 0 1px 0;
+							border-bottom: 2px solid #597193;
+							color: #597193;
 						}
 					}
 				}

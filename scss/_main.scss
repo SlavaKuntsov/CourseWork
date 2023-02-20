@@ -87,9 +87,31 @@
 .rooms {
     .all-rooms-carts {
         @include row;
-        @include center;
+        // @include center;
+		@extend %max;
+		margin: 0 auto;
         gap: 30px;
+		position: relative;
+		.leftButton, .rightButton {
+			position: absolute;
+			width:  80px;
+			height: 80px;
+			// border: 1px solid black;
+			z-index: 20;
+			border-radius: 50%;
+			background: rgb(162, 186, 229);
+			top: 40%;
+			@include center;
+			@include align;
+		}
+		.leftButton{
+			left: -40px;
+		}
+		.rightButton{
+			right: -40px;
+		}
         .room-cart {
+			z-index: 10;
 			@include hover;
             img {
                 width: 350px;
@@ -97,7 +119,7 @@
             }
             .cart-text {
                 border: 1px solid #596b86;
-                padding: 24px 0 10px 22px;
+                padding: 16px 0 10px 22px;
                 h4 {
                     font-weight: 400;
                     font-size: 24px;
@@ -231,8 +253,14 @@
     margin: 120px auto 0;
     height: 523px;
     .history-text {
-        padding: 85px 65px;
+		position: relative;
+		padding: 85px 65px;
         background: $salat;
+		.transparent-arrow{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
         h2 {
             font-weight: 400;
             font-size: 40px;

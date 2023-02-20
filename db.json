@@ -1,0 +1,28 @@
+{
+    "rooms": [
+        {
+            "image": "img/main/room1.svg",
+            "name": "Deluxe Contrast Room",
+            "sqm": "52",
+            "bed": "2",
+            "bathroom": "1",
+            "price": "200"
+        },
+        {
+            "image": "img/main/room2.svg",
+            "name": "Luxery Twin Room",
+            "sqm": "54",
+            "bed": "2",
+            "bathroom": "1",
+            "price": "250"
+        },
+        {
+            "image": "img/main/room3.svg",
+            "name": "Single Contrast Room",
+            "sqm": "54",
+            "bed": "2",
+            "bathroom": "1",
+            "price": "280"
+        }
+    ]
+}
