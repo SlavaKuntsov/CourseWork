@@ -86,11 +86,10 @@
 
 .rooms {
     .all-rooms-carts {
-        @include row;
         // @include center;
-		@extend %max;
+		// @extend %max;
+		max-width: 1120px;
 		margin: 0 auto;
-        gap: 30px;
 		position: relative;
 		.leftButton, .rightButton {
 			position: absolute;
@@ -110,55 +109,67 @@
 		.rightButton{
 			right: -40px;
 		}
-        .room-cart {
-			z-index: 10;
-			@include hover;
-            img {
-                width: 350px;
-                height: 264px;
-            }
-            .cart-text {
-                border: 1px solid #596b86;
-                padding: 16px 0 10px 22px;
-                h4 {
-                    font-weight: 400;
-                    font-size: 24px;
-                    line-height: 55px;
-                    color: #131313;
-                }
-                .small-carts {
-                    @include align;
-                    gap: 17px;
-                    .small {
-                        @include align;
-                        gap: 5px;
-                        img {
-                            width: 12px;
-                            height: 12px;
-                        }
-                        p {
-                            font-weight: 300;
-                            font-size: 12px;
-                            // line-height: 28px;
-                            letter-spacing: 0.02em;
-                            color: #727272;
-                        }
-                    }
-                }
-                h3 {
-                    span {
-                        font-weight: 600;
-                        font-size: 30px;
-                        line-height: 55px;
-                        color: #384d6c;
-                    }
-                    font-weight: 300;
-                    font-size: 17px;
-                    line-height: 55px;
-                    color: #5f5f5f;
-                }
-            }
-        }
+		.carts-container{
+			overflow-x: hidden;
+			padding: 10px 0 0 0;
+			.carts-track{
+				margin: 0 5px;
+				gap: 30px;
+				// max-height: 420px;
+				@include row;
+				@extend %max;
+				.room-cart {
+					z-index: 10;
+					@include hover;
+					max-width: 350px;
+					img {
+						width: 350px;
+						height: 264px;
+					}
+					.cart-text {
+						border: 1px solid #596b86;
+						padding: 16px 0 10px 22px;
+						h4 {
+							font-weight: 400;
+							font-size: 24px;
+							line-height: 55px;
+							color: #131313;
+						}
+						.small-carts {
+							@include align;
+							gap: 17px;
+							.small {
+								@include align;
+								gap: 5px;
+								img {
+									width: 12px;
+									height: 12px;
+								}
+								p {
+									font-weight: 300;
+									font-size: 12px;
+									// line-height: 28px;
+									letter-spacing: 0.02em;
+									color: #727272;
+								}
+							}
+						}
+						h3 {
+							span {
+								font-weight: 600;
+								font-size: 30px;
+								line-height: 55px;
+								color: #384d6c;
+							}
+							font-weight: 300;
+							font-size: 17px;
+							line-height: 55px;
+							color: #5f5f5f;
+						}
+					}
+				}
+			}
+		}
     }
 }
 
