@@ -1,28 +1,60 @@
 {
     "rooms": [
         {
-            "image": "img/main/room1.svg",
+            "image": "img/main/room1_2.png",
             "name": "Deluxe Contrast Room",
             "sqm": "52",
             "bed": "2",
             "bathroom": "1",
-            "price": "200"
+            "price": "1"
         },
         {
-            "image": "img/main/room2.svg",
-            "name": "Luxery Twin Room",
+            "image": "img/main/room2_2.png",
+            "name": "Luxury Twin Room",
             "sqm": "54",
+            "bed": "4",
+            "bathroom": "2",
+            "price": "2"
+        },
+        {
+            "image": "img/main/room3_2.png",
+            "name": "Single Contrast Room",
+            "sqm": "30",
             "bed": "2",
             "bathroom": "1",
-            "price": "250"
+            "price": "3"
         },
         {
-            "image": "img/main/room3.svg",
+            "image": "img/main/room3_2.png",
             "name": "Single Contrast Room",
             "sqm": "54",
             "bed": "2",
             "bathroom": "1",
-            "price": "280"
+            "price": "4"
+        },
+        {
+            "image": "img/main/room3_2.png",
+            "name": "Single Contrast Room",
+            "sqm": "30",
+            "bed": "2",
+            "bathroom": "1",
+            "price": "5"
+        },
+        {
+            "image": "img/main/room3_2.png",
+            "name": "Single Contrast Room",
+            "sqm": "54",
+            "bed": "2",
+            "bathroom": "1",
+            "price": "6"
         }
-    ]
+    ],
+	"customers": [
+		{"image": "", "who": "", "name": "1", "text": ""},
+		{"image": "", "who": "", "name": "2", "text": ""},
+		{"image": "", "who": "", "name": "3", "text": ""},
+		{"image": "", "who": "", "name": "4", "text": ""},
+		{"image": "", "who": "", "name": "5", "text": ""},
+		{"image": "", "who": "", "name": "6", "text": ""}
+	]
 }
